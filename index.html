@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Prevention Awareness | Early Detection Saves Lives</title>
+  <meta name="description"
+    content="Learn about breast cancer prevention, self-examination, risk factors, and survivor stories. Early detection saves lives.">
+  <!-- Tailwind CSS CDN (preflight disabled to avoid Bootstrap conflicts) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-ribbon me-2"></i>PinkHope</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fas fa-bars" style="color:var(--pink-500)"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3 align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prevention">Prevention</a></li>
+          <li class="nav-item"><a class="nav-link" href="#self-exam">Self-Exam</a></li>
+          <li class="nav-item"><a class="nav-link" href="#risk">Risk Factors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bmi">BMI Check</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="dark-toggle" id="dark-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"
+            id="dark-icon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="hero" class="hero-section">
+    <div class="container position-relative" style="z-index:2">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <p class="text-uppercase fw-bold mb-3" style="color:var(--pink-500);letter-spacing:3px;font-size:0.85rem">
+            <i class="fas fa-heartbeat me-2"></i>Breast Cancer Awareness
+          </p>
+          <h1 class="hero-title mb-4">Early Detection<br>Saves Lives</h1>
+          <p class="hero-subtitle mb-4">Every 2 minutes, a woman is diagnosed with breast cancer. Knowledge, awareness,
+            and early screening are your most powerful tools in the fight against breast cancer.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#prevention" class="btn btn-hero btn-hero-primary"><i class="fas fa-shield-heart me-2"></i>Learn
+              Prevention Tips</a>
+            <a href="#self-exam" class="btn btn-hero btn-hero-outline"><i
+                class="fas fa-hand-holding-medical me-2"></i>Self-Examination Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-ribbon"><i class="fas fa-ribbon"></i></div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Understanding Breast Cancer</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Breast cancer occurs when cells in the breast grow uncontrollably. It is the
+        most common cancer among women worldwide, but with early detection, the survival rate is remarkably high.</p>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-female"></i></div>
+            <div class="stat-number"><span class="counter" data-target="1" data-suffix=" in 8">0</span></div>
+            <div class="stat-label">Women affected in their lifetime</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="stat-number"><span class="counter" data-target="99" data-suffix="%">0</span></div>
+            <div class="stat-label">Survival rate with early detection</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-globe"></i></div>
+            <div class="stat-number"><span class="counter" data-target="2300000" data-suffix="+">0</span></div>
+            <div class="stat-label">New cases diagnosed annually worldwide</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-heart-pulse"></i></div>
+            <div class="stat-number"><span class="counter" data-target="3900000" data-suffix="+">0</span></div>
+            <div class="stat-label">Breast cancer survivors in the US</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Prevention Tips Section ===== -->
+  <section id="prevention">
+    <div class="container">
+      <h2 class="section-title reveal">Prevention Tips</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">While not all breast cancers can be prevented, these steps can significantly
+        reduce your risk.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-x-ray"></i></div>
+            <h5>Regular Screening</h5>
+            <p>Get annual mammograms starting at age 40 or earlier if you have risk factors. Early detection is the best
+              protection.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-apple-whole"></i></div>
+            <h5>Healthy Diet</h5>
+            <p>Eat plenty of fruits, vegetables, and whole grains. A Mediterranean diet has been shown to lower breast
+              cancer risk.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-person-running"></i></div>
+            <h5>Regular Exercise</h5>
+            <p>Aim for at least 150 minutes of moderate activity per week. Exercise helps regulate hormones and boost
+              immunity.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-ban-smoking"></i></div>
+            <h5>Avoid Smoking</h5>
+            <p>Smoking is linked to a higher risk of breast cancer, especially in premenopausal women. Quit today for a
+              healthier tomorrow.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-wine-glass"></i></div>
+            <h5>Limit Alcohol</h5>
+            <p>Even small amounts of alcohol can increase risk. Limit intake to no more than one drink per day for
+              better health.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="prevention-card">
+            <div class="prevention-icon"><i class="fas fa-weight-scale"></i></div>
+            <h5>Maintain Healthy Weight</h5>
+            <p>Being overweight or obese increases breast cancer risk, especially after menopause. Stay active and eat
+              well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Self-Examination Guide ===== -->
+  <section id="self-exam" class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Self-Examination Guide</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Perform a breast self-exam once a month. Follow these simple steps to check for
+        any changes.</p>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="custom-accordion reveal">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#exam-step1"><i class="fas fa-1 me-3"
+                  style="color:var(--pink-500)"></i>Stand in Front of a Mirror</button>
+              <div class="accordion-collapse" id="exam-step1" style="display:none">
+                <div class="accordion-body">Look at your breasts with arms at your sides, then raised above your head.
+                  Check for any changes in shape, size, skin texture, or nipple position. Look for dimpling, puckering,
+                  or redness.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#exam-step2"><i class="fas fa-2 me-3"
+                  style="color:var(--pink-500)"></i>Check for Discharge</button>
+              <div class="accordion-collapse" id="exam-step2" style="display:none">
+                <div class="accordion-body">Gently squeeze each nipple between your thumb and index finger. Check for
+                  any discharge — clear, milky, or bloody. Report any unusual discharge to your doctor.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#exam-step3"><i class="fas fa-3 me-3"
+                  style="color:var(--pink-500)"></i>Feel While Standing</button>
+              <div class="accordion-collapse" id="exam-step3" style="display:none">
+                <div class="accordion-body">Using the pads of your three middle fingers, press firmly in small circular
+                  motions. Cover the entire breast from collarbone to bra line, and from armpit to cleavage. Use light,
+                  medium, and firm pressure.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#exam-step4"><i class="fas fa-4 me-3"
+                  style="color:var(--pink-500)"></i>Feel While Lying Down</button>
+              <div class="accordion-collapse" id="exam-step4" style="display:none">
+                <div class="accordion-body">Place a pillow under your right shoulder. Use your left hand to examine your
+                  right breast in the same circular pattern. Repeat on the other side. Lying down spreads tissue evenly,
+                  making it easier to detect lumps.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#exam-step5"><i class="fas fa-5 me-3"
+                  style="color:var(--pink-500)"></i>Check the Underarm Area</button>
+              <div class="accordion-collapse" id="exam-step5" style="display:none">
+                <div class="accordion-body">Don't forget your armpits! Breast tissue extends into this area. Feel for
+                  any lumps or thickening. If you find anything unusual, contact your healthcare provider right away.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Risk Factors Section ===== -->
+  <section id="risk">
+    <div class="container">
+      <h2 class="section-title reveal">Risk Factors</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Understanding your risk factors helps you make informed decisions about
+        screening and prevention.</p>
+      <div class="text-center mb-4 reveal">
+        <ul class="nav risk-tabs justify-content-center" role="tablist">
+          <li><button class="nav-link risk-tab-btn active" data-tab="tab-genetic"><i
+                class="fas fa-dna me-2"></i>Genetic</button></li>
+          <li><button class="nav-link risk-tab-btn" data-tab="tab-lifestyle"><i
+                class="fas fa-utensils me-2"></i>Lifestyle</button></li>
+          <li><button class="nav-link risk-tab-btn" data-tab="tab-hormonal"><i
+                class="fas fa-flask me-2"></i>Hormonal</button></li>
+        </ul>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div id="tab-genetic" class="risk-tab-pane active">
+            <div class="risk-card">
+              <h6><i class="fas fa-dna me-2" style="color:var(--pink-500)"></i>BRCA1 & BRCA2 Mutations</h6>
+              <p>Inherited mutations in BRCA1/BRCA2 genes significantly increase lifetime breast cancer risk to 45–72%.
+              </p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-users me-2" style="color:var(--pink-500)"></i>Family History</h6>
+              <p>Having a first-degree relative (mother, sister, daughter) with breast cancer nearly doubles your risk.
+              </p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-person me-2" style="color:var(--pink-500)"></i>Personal History</h6>
+              <p>A previous diagnosis of breast cancer increases the risk of developing a new cancer in the other
+                breast.</p>
+            </div>
+          </div>
+          <div id="tab-lifestyle" class="risk-tab-pane" style="display:none">
+            <div class="risk-card">
+              <h6><i class="fas fa-wine-bottle me-2" style="color:var(--pink-500)"></i>Alcohol Consumption</h6>
+              <p>Women who drink 2–3 alcoholic beverages daily have a 20% higher risk compared to non-drinkers.</p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-couch me-2" style="color:var(--pink-500)"></i>Physical Inactivity</h6>
+              <p>A sedentary lifestyle contributes to weight gain and hormonal imbalances that increase cancer risk.</p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-burger me-2" style="color:var(--pink-500)"></i>Poor Diet & Obesity</h6>
+              <p>Excess body fat, especially after menopause, increases estrogen levels and breast cancer risk.</p>
+            </div>
+          </div>
+          <div id="tab-hormonal" class="risk-tab-pane" style="display:none">
+            <div class="risk-card">
+              <h6><i class="fas fa-calendar me-2" style="color:var(--pink-500)"></i>Early Menstruation</h6>
+              <p>Starting periods before age 12 increases exposure to estrogen and progesterone over a lifetime.</p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-clock me-2" style="color:var(--pink-500)"></i>Late Menopause</h6>
+              <p>Going through menopause after age 55 means longer exposure to reproductive hormones.</p>
+            </div>
+            <div class="risk-card">
+              <h6><i class="fas fa-pills me-2" style="color:var(--pink-500)"></i>Hormone Therapy</h6>
+              <p>Long-term use of combined hormone replacement therapy (HRT) increases breast cancer risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BMI Risk Checker ===== -->
+  <section id="bmi" class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">BMI & Risk Checker</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Calculate your BMI and learn how maintaining a healthy weight can reduce your
+        breast cancer risk.</p>
+      <div class="reveal">
+        <form class="bmi-form" id="bmi-form">
+          <div class="row g-3">
+            <div class="col-md-4"><input type="number" id="bmi-age" placeholder="Age (years)" min="1" max="120"></div>
+            <div class="col-md-4"><input type="number" id="bmi-weight" placeholder="Weight (kg)" min="1" step="0.1">
+            </div>
+            <div class="col-md-4"><input type="number" id="bmi-height" placeholder="Height (cm)" min="1" step="0.1">
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <button type="submit" class="btn-pink"><i class="fas fa-calculator me-2"></i>Calculate BMI</button>
+          </div>
+          <div class="bmi-result" id="bmi-result"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Survivor Stories ===== -->
+  <section id="stories">
+    <div class="container">
+      <h2 class="section-title reveal">Survivor Stories</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Inspiring stories from brave women who fought breast cancer and won.</p>
+      <div class="reveal">
+        <div class="story-carousel">
+          <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+          <div class="story-slide active">
+            <div style="font-size:3rem;margin-bottom:1rem;color:var(--pink-400)"><i class="fas fa-quote-left"></i></div>
+            <p class="story-quote">Cancer taught me to live every day with purpose. I was diagnosed at 34, and after
+              treatment, I became an advocate for early screening. My story could be anyone's story — don't wait, get
+              checked.</p>
+            <p class="story-author">Sarah Mitchell</p>
+            <p class="story-detail">Stage II Survivor • Diagnosed at 34</p>
+          </div>
+          <div class="story-slide">
+            <div style="font-size:3rem;margin-bottom:1rem;color:var(--pink-400)"><i class="fas fa-quote-left"></i></div>
+            <p class="story-quote">A routine mammogram saved my life. The cancer was caught so early that it hadn't
+              spread. I want every woman to know — early detection is not just a slogan, it's a lifeline.</p>
+            <p class="story-author">Dr. Priya Sharma</p>
+            <p class="story-detail">Stage I Survivor • Diagnosed at 45</p>
+          </div>
+          <div class="story-slide">
+            <div style="font-size:3rem;margin-bottom:1rem;color:var(--pink-400)"><i class="fas fa-quote-left"></i></div>
+            <p class="story-quote">When I found the lump, fear consumed me. But my family, my doctors, and my faith
+              pulled me through. Today, I'm 5 years cancer-free and stronger than ever. Never lose hope.</p>
+            <p class="story-author">Maria Rodriguez</p>
+            <p class="story-detail">Stage III Survivor • 5 Years Cancer-Free</p>
+          </div>
+          <div class="story-slide">
+            <div style="font-size:3rem;margin-bottom:1rem;color:var(--pink-400)"><i class="fas fa-quote-left"></i></div>
+            <p class="story-quote">I carried the BRCA2 gene. Knowledge gave me power — I chose preventive measures and
+              regular monitoring. Knowing your risk is the first step to fighting back.</p>
+            <p class="story-author">Jennifer Okafor</p>
+            <p class="story-detail">BRCA2 Carrier • Prevention Advocate</p>
+          </div>
+          <div class="carousel-nav">
+            <span class="carousel-dot active" data-index="0"></span>
+            <span class="carousel-dot" data-index="1"></span>
+            <span class="carousel-dot" data-index="2"></span>
+            <span class="carousel-dot" data-index="3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ Section ===== -->
+  <section id="faq" class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <div class="pink-line reveal"></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="custom-accordion reveal">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#faq1"><i class="fas fa-circle-question me-2"
+                  style="color:var(--pink-500)"></i>At what age should I start getting mammograms?</button>
+              <div class="accordion-collapse" id="faq1" style="display:none">
+                <div class="accordion-body">The American Cancer Society recommends women with average risk start annual
+                  mammograms at age 40. If you have a family history or genetic risk, discuss earlier screening with
+                  your doctor.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#faq2"><i class="fas fa-circle-question me-2"
+                  style="color:var(--pink-500)"></i>Can men get breast cancer?</button>
+              <div class="accordion-collapse" id="faq2" style="display:none">
+                <div class="accordion-body">Yes, although rare, men can develop breast cancer. About 1 in 833 men will
+                  be diagnosed in their lifetime. Men should also be aware of changes in their chest area and consult a
+                  doctor if they notice anything unusual.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#faq3"><i class="fas fa-circle-question me-2"
+                  style="color:var(--pink-500)"></i>Does wearing underwire bras cause breast cancer?</button>
+              <div class="accordion-collapse" id="faq3" style="display:none">
+                <div class="accordion-body">No, this is a myth. Scientific studies have found no connection between
+                  wearing bras (including underwire) and breast cancer risk. Focus on proven risk factors instead.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#faq4"><i class="fas fa-circle-question me-2"
+                  style="color:var(--pink-500)"></i>Is breast cancer hereditary?</button>
+              <div class="accordion-collapse" id="faq4" style="display:none">
+                <div class="accordion-body">About 5–10% of breast cancers are hereditary, linked to gene mutations like
+                  BRCA1 and BRCA2. However, most women diagnosed with breast cancer have no family history — so regular
+                  screening is important for everyone.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" data-target="#faq5"><i class="fas fa-circle-question me-2"
+                  style="color:var(--pink-500)"></i>What are the early signs of breast cancer?</button>
+              <div class="accordion-collapse" id="faq5" style="display:none">
+                <div class="accordion-body">Early signs include a new lump or mass, swelling, skin dimpling, nipple
+                  discharge, redness or flaky skin, and changes in breast shape or size. Monthly self-exams help you
+                  notice changes early.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="pink-line reveal"></div>
+      <p class="section-subtitle reveal">Have questions or need support? We're here to help. Reach out to us anytime.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-7 reveal">
+          <form class="contact-form" id="contact-form">
+            <input type="text" id="contact-name" placeholder="Your Name">
+            <div class="form-error" id="name-error"><i class="fas fa-exclamation-circle me-1"></i>Please enter your
+              name.</div>
+            <input type="email" id="contact-email" placeholder="Your Email">
+            <div class="form-error" id="email-error"><i class="fas fa-exclamation-circle me-1"></i>Please enter a valid
+              email address.</div>
+            <textarea id="contact-message" rows="5" placeholder="Your Message"></textarea>
+            <div class="form-error" id="message-error"><i class="fas fa-exclamation-circle me-1"></i>Message must be at
+              least 10 characters.</div>
+            <div class="text-center">
+              <button type="submit" class="btn-pink"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+            </div>
+            <div class="form-success" id="contact-success"><i class="fas fa-check-circle me-2"></i>Thank you! Your
+              message has been sent successfully.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3"><i class="fas fa-ribbon me-2"></i>PinkHope</h5>
+          <p style="opacity:0.85;font-size:0.95rem">Empowering women with knowledge and resources to fight breast cancer
+            through awareness, prevention, and early detection.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6 class="fw-bold mb-3">Emergency Helpline</h6>
+          <p style="font-size:1.3rem;font-weight:700"><i class="fas fa-phone-volume me-2"></i>1-800-227-2345</p>
+          <p style="opacity:0.8;font-size:0.9rem">American Cancer Society 24/7 Helpline</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <h6 class="fw-bold mb-3">Follow Us</h6>
+          <div class="footer-social">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,0.2);margin:2rem 0 1rem">
+      <p class="text-center mb-0" style="opacity:0.7;font-size:0.85rem">&copy; 2026 PinkHope — Breast Cancer Prevention
+        Awareness. Made with <i class="fas fa-heart" style="color:var(--pink-400)"></i> for a healthier tomorrow.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
